@@ -47,15 +47,15 @@ $(document).ready(function() {
 	<div class="row centered">
 		<ul class="breadcrumb">
     		<li><a href="/sentient/">Home</a></li>
-    		<li><a href="index.php">About</a></li>
-    		<li class="active">NEO Studies</li>
+    		<li><a href="index.php"><?php echo ($page1); ?></a></li>
+    		<li class="active"><?php echo ($page2); ?></li>
 		</ul>
 	</div>
 </div>
 </header><!-- header -->
 </div>
 <section id="content" class="row centered">
-<div id="mainPanel" class="pull-right col-xs-12 col-sm-8 col-md-8 col-lg-9">
+<div id="mainPanel" class="pull-right col-xs-12 col-sm-9 col-md-9 col-lg-10">
 <!-- Main Content (begin) -->
 	<h1>Center for NEO Studies (CNEOS)</h1>
 	<p>The JPL Center for NEO Studies (CNEOS) computes high-precision orbits
@@ -89,12 +89,12 @@ $(document).ready(function() {
 	<a href="http://ssd.jpl.nasa.gov/sbdb_query.cgi" target="_blank">filtering tool</a>.</p>
 <!-- Main Content (end) -->
 </div>
-<div id="leftPanel" class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+<div id="leftPanel" class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
 <!-- Quick Links Panel (begin) -->
 	<div id="navSide">
 		<h4>Quick Links</h4>
       	<ul>
-        	<li><a href="/sentient/about/neos-basics.php">NEO Basics</a></li>
+        	<li><a href="/sentient/about/neo-basics.php">NEO Basics</a></li>
         	<li><a href="/sentient/about/search-program.php">Search Program</a></li>
         	<li><a href="http://ssd.jpl.nasa.gov/sbdb_query.cgi" target="_blank">NEO DB Query</a></li>
         	<li><a href="/sentient/ca/fireballs.php">Fireballs</a></li>

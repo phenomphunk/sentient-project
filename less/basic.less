@@ -76,7 +76,7 @@ audio:not([controls]) { display: none; height: 0
 /* TEXT */
 
 h1 { font-family: "Orbitron" !important; color: #333333; font-size: 2rem; font-weight: normal; padding: 0; margin: 10px 0 20px;}
-h2 {}
+h2 { font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; font-size: 1.5rem; font-weight: normal;}
 #content { font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;}
 h3 { color: @grey; font-size: 1.45rem; margin: 0 0 5px 0; line-height: 1.8rem; text-transform: uppercase; font-style: italic; text-shadow: 1px 2px 1px #111111;}
 h4 { font-family: "Orbitron"; color: #333333; font-weight: bold; letter-spacing: .7px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
@@ -84,10 +84,10 @@ h5 {
 	&.subheader { font-size: 1.05rem; line-height: 1.55rem; margin: 0 0 7px}
 }
 p, #content ul { font-size: 1.05rem; color: #777777;}
-p {	line-height: 1.5rem; margin: 0 0 17px 0;
+p { line-height: 1.5rem; margin: 0 0 17px 0;
 	&.see-more { font-size: .8rem; line-height: 1.1rem; margin-top: 7px; text-align: center}
 }
-#leftPanel table, p.see-more { width: 245px}
+#leftPanel table, p.see-more { width: 100%; max-width: 245px}
 footer p { margin: 0; font-size: .85rem; line-height: 1rem; letter-spacing: .5px; color: @white;
 	.small { font-size: .55rem;}
 }
@@ -102,7 +102,7 @@ footer p { margin: 0; font-size: .85rem; line-height: 1rem; letter-spacing: .5px
 #content a:hover, footer a:hover, { -webkit-transition: .7s; -moz-transition-duration: .7s; -ms-transition-duration: .7s; -o-transition-duration: .7s; transition-duration: .7s; cursor: pointer; text-decoration: none}
 #nav-main a:hover, hgroup a:hover h1, footer a:hover { color: @primary-color !important; text-decoration: none !important}
 #navSide li a:hover, footer a:link { color: @white !important}
-#content a:hover { color: #29648e; border-bottom: none}
+#content a:hover { color: #173e59; border-bottom: none}
 a[href^="http"]:not(.hide-ext-link):after {
     margin: 0 0 0 5px;
     content: "\f08e";
@@ -120,19 +120,8 @@ table thead tr th, table thead tr td {
     font-size: 0.9rem;
     font-weight: bold;
 	padding: 0.5rem;}
-#leftPanel table, #neo-bday table { border: solid 1px #DDDDDD; table-layout: auto;
-	th { text-align: center; background-color: #F5F5F5; border-bottom: solid 1px #DDDDDD;}
-	tbody td { padding: 4px;
-		&.align-right { text-align: right}
-	}
-}
-#neo-bday {
-	table, th { width: 100%; font-size: 1.3rem;
-		td { vertical-align: top;
-		&.align-right { width: 50%; font-weight: bold}
-		}
-	}
-}
+.copy.right { padding-left: 0 !important}
+.copy.left { padding-right: 0 !important}
 
 /* Clearfix */
 
@@ -149,7 +138,7 @@ visibility: hidden;}
 
 /* HEADER & NAVIGATION */
 
-.hero-row { background-color: rgba(0, 0, 0, 0.4); width: 100%; padding: 15px; position: absolute; top: 99px; left: 0;
+.hero-row { background-color: rgba(0, 0, 0, 0.5); width: 100%; padding: 15px; position: absolute; top: 99px; left: 0;
 	p { color: @white; margin: 0 0 5px 7px; font-size: .8rem}
 	img.overlay-nasa, img.overlay-nasa-stacked { height: 42px; float: left; margin-right: 25px}
 	img.overlay-nasa-stacked { margin-left: -25px}
@@ -160,15 +149,15 @@ visibility: hidden;}
 
 .parallax-window { position: relative; height: 300px; width: 100%; background-attachment: fixed; background-repeat:  no-repeat; -webkit-background-size: cover; -moz-background-size: cover; -ms-background-size: cover; -o-background-size: cover; background-size: cover;
 }
-.hero1 { background-image: url(../images/hero1.jpg); background-position: 40% 55%;}
+.hero1 { background-image: url(../images/hero1.jpg); background-position: center -200px;}
 .hero2 { background-image: url(../images/hero2.jpg); background-position: 0 center;}
 .hero3 { background-image: url(../images/hero3.jpg); background-position: center 85%;}
 .hero4 { background-image: url(../images/hero4.jpg); background-position: center;}
-.hero5 { background-image: url(../images/hero5.jpg); background-position: center -200px;}
+.hero5 { background-image: url(../images/hero5.jpg); background-position: center -300px;}
 
 header, .header-wrapper { webkit-backface-visibility: hidden; backface-visibility: hidden; min-height: 101px;}
 .header-wrapper.expanded.sticky { min-height: 104px}
-header { width: 100%; box-shadow: 0px 5px 10px #222222; background-color: #0C0E10; border-top: 1px solid #111111;; border-bottom: 1px solid #333333; .Transition-3s;
+header { width: 100%; box-shadow: 0px 4px 8px #444444; background-color: #0C0E10; border-top: 1px solid #111111;; border-bottom: 1px solid #333333; .Transition-3s;
     &.sticky { position: fixed; left: auto; top: 0; z-index: 200; min-height: 71px !important;
         hgroup { padding-top: 9px;
             .title { margin-left: 11px}
@@ -263,6 +252,23 @@ hgroup { padding-left: 15px;
 #mainPanel {
 	h4 { margin-left: 15px}
 }
+#leftPanel table, #neo-bday table, #tab-1 table { border: solid 1px #DDDDDD; table-layout: auto;
+	th { padding: 5px; text-align: center; background-color: #F5F5F5; border-bottom: solid 1px #DDDDDD;}
+	tbody td { padding: 4px;
+		&.align-right { text-align: right}
+	}
+}
+#tab-1 { 
+	th, td {text-align: left !important; padding: 10px !important; font-size: .95rem;}
+	img { margin-top: 17px}
+}
+#neo-bday {
+	table, th { width: 100%; font-size: 1.3rem;
+		td { vertical-align: top;
+		&.align-right { width: 50%; font-weight: bold}
+		}
+	}
+}
 .hovereffect {
 	width: 100%;
 	height: 100%;
@@ -288,8 +294,10 @@ hgroup { padding-left: 15px;
 		h2, a.info {
 		opacity: 1;
 		filter: alpha(opacity=100);
-		-ms-transform: translatey(0);
 		-webkit-transform: translatey(0);
+		-moz-transform: translatey(0);
+		-ms-transform: translatey(0x);
+		-o-transform: translatey(0);
 		transform: translatey(0);
 		}
 	}
@@ -561,7 +569,9 @@ header {
 
 #content { 
 	.spotlight-topics { padding: 0 15px;}
-}	
+}
+table { font-size: .77rem}
+table thead tr th, table thead tr td { font-size: 0.8rem;}
 
 /* FORM */
 
@@ -645,10 +655,13 @@ header.sticky {
 .hovereffect {
 	&:hover {  
 		h2, a.info {
-		-ms-transform: translatey(55px);
-		-webkit-transform: translatey(55px);
-		transform: translatey(55px);
+		-webkit-transform: translatey(-10px);
+		-moz-transform: translatey(-10px);
+		-ms-transform: translatey(-10px);
+		-o-transform: translatey(-10px);
+		transform: translatey(-10px);
 		}
-	}	
+	}
+	a.info { margin: 15px 0 0;}
 }
 }

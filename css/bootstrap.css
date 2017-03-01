@@ -4013,6 +4013,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-right: 2px;
   line-height: 1.42857143;
   border: 1px solid transparent;
+  border-bottom: 1px solid #DDDDDD !important;
   border-radius: 4px 4px 0 0;
 }
 .nav-tabs > li > a:hover {
@@ -4024,7 +4025,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #555555;
   background-color: #ffffff;
   border: 1px solid #dddddd;
-  border-bottom-color: transparent;
+  border-bottom-color: transparent !important;
   cursor: default;
 }
 .nav-tabs.nav-justified {

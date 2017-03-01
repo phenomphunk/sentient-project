@@ -102,6 +102,11 @@ h1 {
   padding: 0;
   margin: 10px 0 20px;
 }
+h2 {
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: normal;
+}
 #content {
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
@@ -144,7 +149,8 @@ p.see-more {
 }
 #leftPanel table,
 p.see-more {
-  width: 245px;
+  width: 100%;
+  max-width: 245px;
 }
 footer p {
   margin: 0;
@@ -193,7 +199,7 @@ footer a:link {
   color: #ffffff !important;
 }
 #content a:hover {
-  color: #29648e;
+  color: #173e59;
   border-bottom: none;
 }
 a[href^="http"]:not(.hide-ext-link):after {
@@ -221,38 +227,11 @@ table thead tr td {
   font-weight: bold;
   padding: 0.5rem;
 }
-#leftPanel table,
-#neo-bday table {
-  border: solid 1px #DDDDDD;
-  table-layout: auto;
+.copy.right {
+  padding-left: 0 !important;
 }
-#leftPanel table th,
-#neo-bday table th {
-  text-align: center;
-  background-color: #F5F5F5;
-  border-bottom: solid 1px #DDDDDD;
-}
-#leftPanel table tbody td,
-#neo-bday table tbody td {
-  padding: 4px;
-}
-#leftPanel table tbody td.align-right,
-#neo-bday table tbody td.align-right {
-  text-align: right;
-}
-#neo-bday table,
-#neo-bday th {
-  width: 100%;
-  font-size: 1.3rem;
-}
-#neo-bday table td,
-#neo-bday th td {
-  vertical-align: top;
-}
-#neo-bday table td.align-right,
-#neo-bday th td.align-right {
-  width: 50%;
-  font-weight: bold;
+.copy.left {
+  padding-right: 0 !important;
 }
 /* Clearfix */
 .clearfix:after {
@@ -273,7 +252,7 @@ table thead tr td {
 }
 /* HEADER & NAVIGATION */
 .hero-row {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   padding: 15px;
   position: absolute;
@@ -322,7 +301,7 @@ table thead tr td {
 }
 .hero1 {
   background-image: url(../images/hero1.jpg);
-  background-position: 40% 55%;
+  background-position: center -200px;
 }
 .hero2 {
   background-image: url(../images/hero2.jpg);
@@ -338,7 +317,7 @@ table thead tr td {
 }
 .hero5 {
   background-image: url(../images/hero5.jpg);
-  background-position: center -200px;
+  background-position: center -300px;
 }
 header,
 .header-wrapper {
@@ -351,7 +330,7 @@ header,
 }
 header {
   width: 100%;
-  box-shadow: 0px 5px 10px #222222;
+  box-shadow: 0px 4px 8px #444444;
   background-color: #0C0E10;
   border-top: 1px solid #111111;
   border-bottom: 1px solid #333333;
@@ -582,6 +561,53 @@ hgroup h2 {
 #mainPanel h4 {
   margin-left: 15px;
 }
+#leftPanel table,
+#neo-bday table,
+#tab-1 table {
+  border: solid 1px #DDDDDD;
+  table-layout: auto;
+}
+#leftPanel table th,
+#neo-bday table th,
+#tab-1 table th {
+  padding: 5px;
+  text-align: center;
+  background-color: #F5F5F5;
+  border-bottom: solid 1px #DDDDDD;
+}
+#leftPanel table tbody td,
+#neo-bday table tbody td,
+#tab-1 table tbody td {
+  padding: 4px;
+}
+#leftPanel table tbody td.align-right,
+#neo-bday table tbody td.align-right,
+#tab-1 table tbody td.align-right {
+  text-align: right;
+}
+#tab-1 th,
+#tab-1 td {
+  text-align: left !important;
+  padding: 10px !important;
+  font-size: .95rem;
+}
+#tab-1 img {
+  margin-top: 17px;
+}
+#neo-bday table,
+#neo-bday th {
+  width: 100%;
+  font-size: 1.3rem;
+}
+#neo-bday table td,
+#neo-bday th td {
+  vertical-align: top;
+}
+#neo-bday table td.align-right,
+#neo-bday th td.align-right {
+  width: 50%;
+  font-weight: bold;
+}
 .hovereffect {
   width: 100%;
   height: 100%;
@@ -608,8 +634,10 @@ hgroup h2 {
 .hovereffect:hover a.info {
   opacity: 1;
   filter: alpha(opacity=100);
-  -ms-transform: translatey(0);
   -webkit-transform: translatey(0);
+  -moz-transform: translatey(0);
+  -ms-transform: translatey(0x);
+  -o-transform: translatey(0);
   transform: translatey(0);
 }
 .hovereffect .overlay {
@@ -981,6 +1009,13 @@ footer {
   #content .spotlight-topics {
     padding: 0 15px;
   }
+  table {
+    font-size: 0.77rem;
+  }
+  table thead tr th,
+  table thead tr td {
+    font-size: 0.8rem;
+  }
   /* FORM */
   #cf-fieldset input {
     height: 55px;
@@ -1117,8 +1152,13 @@ footer {
 @media all and (min-width: 1200px) {
   .hovereffect:hover h2,
   .hovereffect:hover a.info {
-    -ms-transform: translatey(55px);
-    -webkit-transform: translatey(55px);
-    transform: translatey(55px);
+    -webkit-transform: translatey(-10px);
+    -moz-transform: translatey(-10px);
+    -ms-transform: translatey(-10px);
+    -o-transform: translatey(-10px);
+    transform: translatey(-10px);
+  }
+  .hovereffect a.info {
+    margin: 15px 0 0;
   }
 }

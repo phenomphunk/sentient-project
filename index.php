@@ -52,12 +52,12 @@ $(document).ready(function() {
 </header><!-- header -->
 </div>
 <section id="content" class="row centered">
-<div id="leftPanel" class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+<div id="leftPanel" class="col-xs-12 col-sm-3 col-md-3 col-lg-2">
 <!-- Quick Links Panel (begin) -->
 	<div id="navSide">
 		<h4>Quick Links</h4>
       	<ul>
-        	<li><a href="/sentient/about/neos-basics.php">NEO Basics</a></li>
+        	<li><a href="/sentient/about/neo-basics.php">NEO Basics</a></li>
         	<li><a href="http://ssd.jpl.nasa.gov/sbdb_query.cgi" target="_blank">NEO DB Query</a></li>
         	<li><a href="/sentient/ca/fireballs.php">Fireballs</a></li>
         	<li><a href="/sentient/orbits/nhats.php">Accessible NEAs</a></li>
@@ -81,16 +81,16 @@ $(document).ready(function() {
 		<h4>NEA Stats:<br><span class="no-wrap nea-stats-date" id="nea_stats_date"></span></h4>
       <table id="nea_totals"></table>
       <p class="see-more">
-        See our <a href="/stats/">Discovery Statistics</a> page<br>for more information.
+        See our <a href="/stats/">Discovery Statistics</a> page for more information.
       </p>
       <table id="nea_od_stats"></table>
     </div>
 <!-- NEO Stats Panel (end) -->
 </div>
-<div id="mainPanel" class="col-xs-12 col-sm-8 col-md-8 col-lg-9 no-padding">
+<div id="mainPanel" class="col-xs-12 col-sm-9 col-md-9 col-lg-10 no-padding">
 <!-- Tools Panel (begin) -->
 	<div class="spotlight-topics">
-		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 no-padding">
+		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 no-padding">
    			<div class="hovereffect">
         		<img class="img-responsive" src="images/hp1-firefalls.jpg" alt="">
         		<div class="overlay">
@@ -99,7 +99,7 @@ $(document).ready(function() {
         		</div>
     		</div>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 no-padding">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 no-padding">
 			<div class="hovereffect">
         		<img class="img-responsive" src="images/hp2-neo-threat.jpg" alt="">
         		<div class="overlay">
@@ -108,7 +108,7 @@ $(document).ready(function() {
         		</div>
     		</div>
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 no-padding">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 no-padding">
 			<div class="hovereffect">
         		<img class="img-responsive" src="images/hp3-neo-deflecting.jpg" alt="">
         		<div class="overlay">
@@ -117,7 +117,7 @@ $(document).ready(function() {
        		  </div>
    		  </div>
         </div>
-		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 no-padding">
+		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 no-padding">
 			<div class="hovereffect">
         		<img class="img-responsive" src="images/hp4-neo-stats.jpg" alt="">
         		<div class="overlay">
