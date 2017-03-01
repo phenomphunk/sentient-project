@@ -152,6 +152,9 @@ p.see-more {
   width: 100%;
   max-width: 245px;
 }
+.image-caption {
+  font-size: 11px;
+}
 footer p {
   margin: 0;
   font-size: .85rem;
@@ -554,6 +557,9 @@ hgroup h2 {
 #content {
   padding-top: 20px;
 }
+#content figure {
+  margin: 0 0 15px 0;
+}
 #content .spotlight-topics {
   margin: 15px 0;
   float: left;
@@ -846,6 +852,9 @@ footer {
     margin-top: 8px;
   }
   /* CONTENT */
+  #content figure {
+    padding: 0 !important;
+  }
   /* FORM */
   #cf-fieldset input,
   #cf-fieldset textarea {
@@ -967,16 +976,23 @@ footer {
 /* <----------------------------------------> TABLET & DESKTOP ONLY <----------------------------------------> */
 @media all and (min-width: 481px) {
   /* CONTENT */
-  .intro .media p {
-    font-size: 115%;
+  #content figure {
+    display: table;
   }
-  .intro .media p.hello {
-    top: 20%;
-    left: 17%;
+  #content figure.left {
+    float: left;
+    padding: 0 15px 0 0;
   }
-  .intro .media p.design {
-    bottom: 0;
-    left: 34%;
+  #content figure.right {
+    float: right;
+    padding: 0 0 0 15px;
+  }
+  #content figure.right figcaption {
+    padding-left: 15px;
+  }
+  #content figure figcaption {
+    display: table-caption;
+    caption-side: bottom;
   }
   /* FORM */
   #cf-fieldset .form-field {
