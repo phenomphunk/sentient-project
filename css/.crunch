@@ -1,0 +1,21 @@
+{
+	"files": {
+		"basic-rspnsv.less": {
+			"engines": [
+				{
+					"compiler": "less",
+					"output": "basic-rspnsv.css",
+					"options": {
+						"compress": false,
+						"ieCompat": false,
+						"strictMath": false,
+						"strictUnits": false,
+						"javascriptEnabled": false,
+						"sourceMap": true
+					}
+				}
+			],
+			"sources": []
+		}
+	}
+}

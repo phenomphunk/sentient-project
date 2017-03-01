@@ -1,0 +1,156 @@
+{
+	"files": {
+		"basic-rspnsv.less": {
+			"engines": [
+				{
+					"compiler": "less",
+					"output": "../css/basic-rspnsv.css",
+					"options": {
+						"compress": false,
+						"ieCompat": false,
+						"strictMath": false,
+						"strictUnits": false,
+						"javascriptEnabled": false,
+						"sourceMap": true
+					}
+				}
+			],
+			"sources": []
+		},
+		"bootstrap/bootstrap.less": {
+			"engines": [
+				{
+					"compiler": "less",
+					"output": "../../css/bootstrap.css",
+					"options": {
+						"compress": false,
+						"ieCompat": false,
+						"strictMath": false,
+						"strictUnits": false,
+						"javascriptEnabled": false,
+						"sourceMap": true
+					}
+				}
+			],
+			"sources": [
+				"navs.less",
+				"glyphicons.less",
+				"mixins/list-group.less",
+				"mixins/nav-vertical-align.less",
+				"normalize.less",
+				"mixins/opacity.less",
+				"badges.less",
+				"mixins/pagination.less",
+				"pager.less",
+				"mixins/panels.less",
+				"carousel.less",
+				"mixins/progress-bar.less",
+				"pagination.less",
+				"mixins/reset-filter.less",
+				"dropdowns.less",
+				"mixins/reset-text.less",
+				"panels.less",
+				"mixins/resize.less",
+				"input-groups.less",
+				"mixins/responsive-visibility.less",
+				"popovers.less",
+				"mixins/size.less",
+				"media.less",
+				"mixins/tab-focus.less",
+				"print.less",
+				"mixins/table-row.less",
+				"mixins/border-radius.less",
+				"mixins/text-emphasis.less",
+				"progress-bars.less",
+				"mixins/text-overflow.less",
+				"mixins/forms.less",
+				"mixins/vendor-prefixes.less",
+				"responsive-embed.less",
+				"modals.less",
+				"mixins/hide-text.less",
+				"navbar.less",
+				"responsive-utilities.less",
+				"wells.less",
+				"mixins/nav-divider.less",
+				"breadcrumbs.less",
+				"scaffolding.less",
+				"close.less",
+				"code.less",
+				"forms.less",
+				"tables.less",
+				"jumbotron.less",
+				"labels.less",
+				"mixins.less",
+				"thumbnails.less",
+				"mixins/buttons.less",
+				"mixins/center-block.less",
+				"mixins/gradients.less",
+				"mixins/labels.less",
+				"mixins/image.less",
+				"variables.less",
+				"buttons.less",
+				"utilities.less",
+				"grid.less",
+				"type.less",
+				"mixins/background-variant.less",
+				"mixins/grid.less",
+				"mixins/alerts.less",
+				"mixins/grid-framework.less",
+				"button-groups.less",
+				"tooltip.less",
+				"alerts.less",
+				"mixins/clearfix.less",
+				"list-group.less",
+				"component-animations.less"
+			]
+		},
+		"font-awesome/font-awesome.less": {
+			"engines": [
+				{
+					"compiler": "less",
+					"output": "../../css/font-awesome.css",
+					"options": {
+						"compress": false,
+						"ieCompat": false,
+						"strictMath": false,
+						"strictUnits": false,
+						"javascriptEnabled": false,
+						"sourceMap": true
+					}
+				}
+			],
+			"sources": [
+				"bordered-pulled.less",
+				"core.less",
+				"fixed-width.less",
+				"screen-reader.less",
+				"rotated-flipped.less",
+				"stacked.less",
+				"variables.less",
+				"animated.less",
+				"path.less",
+				"list.less",
+				"icons.less",
+				"larger.less",
+				"mixins.less"
+			]
+		},
+		"basic.less": {
+			"engines": [
+				{
+					"compiler": "less",
+					"output": "../css/basic.css",
+					"options": {
+						"compress": false,
+						"ieCompat": false,
+						"strictMath": false,
+						"strictUnits": false,
+						"javascriptEnabled": false,
+						"sourceMap": true
+					}
+				}
+			],
+			"sources": []
+		}
+	}
+}
