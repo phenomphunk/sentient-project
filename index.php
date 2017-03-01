@@ -39,27 +39,13 @@ $(document).ready(function() {
     });
 })
 </script>
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script>
-    $(function(){
-        if (navigator.userAgent.match(/(iPod|iPhone|iPad|Android)/)) {
-          $('#ios-notice').removeClass('hidden');
-          $('.parallax-window').height( $(window).height() * 0.5 | 0 );
-        } else {
-          $(window).resize(function(){
-            var parallaxHeight = Math.max($(window).height() * 0.7, 200) | 0;
-            $('.parallax-window').height(parallaxHeight);
-          }).trigger('resize');
-        }
-      });
-</script>
-<script src="js/parallax.min.js"></script>-->
 <?php $page = "home"; ?>
 </head>
 <body>
 <div id="main">
-<!--<div class="parallax-window" data-parallax="scroll" data-bleed="10" data-speed="0.2" data-image-src="http://www.petehanna.com/sentient/images/hero3.jpg" data-natural-width="1400" data-natural-height="900"></div>-->
-<div class="parallax-window hero4"></div>
+<div class="parallax-window hero4">
+<?php include($_SERVER['DOCUMENT_ROOT']."/sentient/includes/hero.php"); ?>
+</div>
 <div class="header-wrapper">
 <header class="quick-nav">
 <?php include($_SERVER['DOCUMENT_ROOT']."/sentient/includes/nav-main.php"); ?>
@@ -68,24 +54,16 @@ $(document).ready(function() {
 <section id="content" class="row centered">
 <!-- Quick Links Panel (begin) -->
 <div id="leftPanel" class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
-    <div id="navSide">
-    <!--<form name="neoLookupForm" novalidate="" class="simple-form ng-pristine ng-valid ng-valid-pattern">
-      <div ng-class="{'error' : neoLookupForm.neoLookupStr.$invalid}">
-        <input type="text" ng-model="neoLookupStr" name="neoLookupStr" placeholder="Lookup NEO designation" pattern="^[0-9,A-Z,a-z,_ \.\-*?\/]+$|[A-Z,a-z][A-Z,a-z, \.'~\-]+$" ng-keyup="neoLookupForm.$valid &amp;&amp; $event.keyCode == 13 &amp;&amp; neoLookupValidation(neoLookupStr)" class="ng-pristine ng-untouched ng-valid ng-valid-pattern">
-        <small ng-show="neoLookupForm.neoLookupStr.$invalid" class="error ng-hide">Invalid character in designation</small>
-      </div>
-      </form>-->
-      <!--<input type="text" id="right-label" placeholder="Lookup NEO designation">-->
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="/sentient/about/neos-basics.php">NEO Basics</a></li>
-        <li><a href="http://ssd.jpl.nasa.gov/sbdb_query.cgi" target="_blank">NEO DB Query</a></li>
-        <li><a href="/sentient/ca/fireballs.php">Fireballs</a></li>
-        <li><a href="/sentient/orbits/nhats.php">Accessible NEAs</a></li>
-        <li><a href="https://www.nasa.gov/planetarydefense/overview" target="_blank">NASA PDCO</a></li>
-        <li><a href="http://www.jpl.nasa.gov/asteroidwatch/" target="_blank">Asteroid Watch</a></li>
-        <!--<li><a href="/faq.php">FAQ</a></li>-->
-      </ul>
+	<div id="navSide">
+		<h4>Quick Links</h4>
+      	<ul>
+        	<li><a href="/sentient/about/neos-basics.php">NEO Basics</a></li>
+        	<li><a href="http://ssd.jpl.nasa.gov/sbdb_query.cgi" target="_blank">NEO DB Query</a></li>
+        	<li><a href="/sentient/ca/fireballs.php">Fireballs</a></li>
+        	<li><a href="/sentient/orbits/nhats.php">Accessible NEAs</a></li>
+        	<li><a href="https://www.nasa.gov/planetarydefense/overview" target="_blank">NASA PDCO</a></li>
+        	<li><a href="http://www.jpl.nasa.gov/asteroidwatch/" target="_blank">Asteroid Watch</a></li>
+      	</ul>
     </div>
 <!-- Quick Links Panel (end) -->
     <hr>

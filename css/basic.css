@@ -173,9 +173,13 @@ p.see-more {
 }
 footer p {
   margin: 0;
-  font-size: .77rem;
+  font-size: .85rem;
   line-height: 1rem;
   letter-spacing: .5px;
+  color: #ffffff;
+}
+footer p .small {
+  font-size: .55rem;
 }
 .white {
   color: #ffffff;
@@ -293,31 +297,44 @@ table thead tr td {
   display: block;
 }
 /* HEADER & NAVIGATION */
-.hero-container {
-  position: relative;
-  overflow: hidden;
-  display: block;
-  margin: 0;
-  padding: 0;
+.hero-row {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  padding: 15px;
+  position: absolute;
+  top: 70px;
+  left: 0;
 }
-.hero-container .caption h3,
-.hero-container .caption p {
-  color: #444;
-  font-weight: normal;
-  text-align: left;
+.hero-row p {
+  color: #ffffff;
+  margin: 0 0 5px 7px;
+  font-size: 0.8rem;
 }
-.hero-container .caption h3 {
-  font-size: 28px;
+.hero-row img.overlay-nasa,
+.hero-row img.overlay-nasa-stacked {
+  height: 42px;
+  float: left;
+  margin-right: 25px;
 }
-.hero-container .caption h3,
-.hero-container .caption p {
-  margin-bottom: 10px !important;
+.hero-row img.overlay-nasa-stacked {
+  margin-left: -25px;
 }
-.hero-container .caption {
-  padding-left: 1.25em;
-  padding-right: 1.25em;
+.hero-row img.overlay-cneos {
+  height: 40px;
+  float: left;
+  max-width: none;
+  margin-right: 10px;
+}
+.hero-row img.overlay-cneos-stacked {
+  height: 40px;
+  float: left;
+  max-width: none;
+}
+.hero-row a.hero-link:after {
+  display: none;
 }
 .parallax-window {
+  position: relative;
   height: 300px;
   width: 100%;
   background-attachment: fixed;
@@ -966,22 +983,6 @@ footer {
 /* <-----------------------------------> TABLET LANDSCAPE & DESKTOP ONLY <-----------------------------------> */
 @media all and (min-width: 768px) {
   /* HEADER & NAVIGATION */
-  .hero-container {
-    margin-bottom: 20px;
-  }
-  .hero-container .caption {
-    width: 60%;
-    position: absolute;
-    z-index: 2;
-    top: 10%;
-  }
-  .hero-container .caption.packed p {
-    width: 65%;
-  }
-  .hero-container .caption.right {
-    width: 50%;
-    left: 50%;
-  }
   header .navbar {
     border: none !important;
   }
