@@ -1,4 +1,4 @@
-@charset "UTF-8";
+/* VARIABLES */
 @white: #FFFFFF;
 @primary-color: #61AEE4;
 @blue: #93D2FA;
@@ -48,17 +48,15 @@
     -o-transition: all 0.3s linear;
     transition: all 0.3s linear;   
 }
+
+/* <-----------------------------------------------------------------------------------------------------------------------> */
+
 * { margin: 0}
 html, body {
     // font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 	font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
     // font-family: "Orbitron", "Aldrich";
 	font-size: 16px;
-	// background: -webkit-linear-gradient(#222222 30%, #444444 60%, #666666 90%) no-repeat;
-	// background: -moz-linear-gradient(#222222 30%, #444444 60%, #666666 90%) no-repeat;
-	// background: -ms-linear-gradient(#222222 30%, #444444 60%, #666666 90%) no-repeat;
-	// background: -o-linear-gradient(#222222 30%, #444444 60%, #666666 90%) no-repeat;
-	// background: linear-gradient(#222222 30%, #444444 60%, #666666 90%) no-repeat;
 	background-color: #ffffff; 
     height: 100%;
 	-webkit-text-size-adjust: 100%;
@@ -77,31 +75,11 @@ audio:not([controls]) { display: none; height: 0
 
 /* TEXT */
 
-h1.title, h2.title { font-family: "Orbitron" !important; font-size: 1.7rem; font-weight: normal; text-transform: lowercase; text-shadow: 2px 2px 4px #000; padding: 0; margin: 20px 0; clear: both;
-    span { display: block; float: left;}
-}
-/* h1 { font: normal 2.8rem; color: @white; text-shadow: 2px 2px 0 #000; text-transform: uppercase; margin: 18px 0 14px; padding: 0;
-	&.title { text-indent: -999999px; margin: 22px 0 0 0; background-repeat: no-repeat !important}
-    &.t1 { background: url(../images/t1.png)}
-    &.t2 { background: url(../images/t2.png)}
-    &.t3 { background: url(../images/t3.png)}
-    &.t4 { background: url(../images/t4.png)}
-}
-h2 { font: normal 2.4rem; letter-spacing: -1px; color: @gold; margin: 15px 0; text-shadow: 2px 1px #000; text-align: center; text-transform: uppercase;
-    &.summary { text-indent: -999999px; display: block; width: 261px; background: url(../images/ts-summary.png) no-repeat; margin: 22px auto 0}
-    &.skills { text-indent: -999999px; display: block; width: 175px; background: url(../images/ts-skills.png) no-repeat; margin: 22px auto 0}
-    &.experience { text-indent: -999999px; display: block; width: 275px; background: url(../images/ts-experience.jpg) no-repeat; margin: 22px auto 0}
-    &.education { text-indent: -999999px; display: block; width: 300px; background: url(../images/ts-education.jpg) no-repeat; margin: 22px auto 0; clear: both}
-    &.tools { text-indent: -999999px; display: block; width: 145px; background: url(../images/ts-tools.jpg) no-repeat; margin: 22px auto 0}
-    &.petewho { text-indent: -999999px; display: block; width: 108px; background: url(../images/ts-petewho.jpg) no-repeat; margin: 22px auto 0}
-}
-h2, h3 { clear: left;
-    &.first { margin-top: 0}
-}
- */
+h1 { font-family: "Orbitron" !important; color: #333333; font-size: 2rem; font-weight: normal; padding: 0; margin: 10px 0 20px;}
+h2 {}
 #content { font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;}
 h3 { color: @grey; font-size: 1.45rem; margin: 0 0 5px 0; line-height: 1.8rem; text-transform: uppercase; font-style: italic; text-shadow: 1px 2px 1px #111111;}
-h4 { font-family: "Orbitron"; font-weight: bold; letter-spacing: .7px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
+h4 { font-family: "Orbitron"; color: #333333; font-weight: bold; letter-spacing: .7px; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;}
 h5 {
 	&.subheader { font-size: 1.05rem; line-height: 1.55rem; margin: 0 0 7px}
 }
@@ -171,7 +149,7 @@ visibility: hidden;}
 
 /* HEADER & NAVIGATION */
 
-.hero-row { background-color: rgba(0, 0, 0, 0.4); width: 100%; padding: 15px; position: absolute; top: 70px; left: 0;
+.hero-row { background-color: rgba(0, 0, 0, 0.4); width: 100%; padding: 15px; position: absolute; top: 99px; left: 0;
 	p { color: @white; margin: 0 0 5px 7px; font-size: .8rem}
 	img.overlay-nasa, img.overlay-nasa-stacked { height: 42px; float: left; margin-right: 25px}
 	img.overlay-nasa-stacked { margin-left: -25px}
@@ -186,8 +164,10 @@ visibility: hidden;}
 .hero2 { background-image: url(../images/hero2.jpg); background-position: 0 center;}
 .hero3 { background-image: url(../images/hero3.jpg); background-position: center 85%;}
 .hero4 { background-image: url(../images/hero4.jpg); background-position: center;}
+.hero5 { background-image: url(../images/hero5.jpg); background-position: center -200px;}
 
 header, .header-wrapper { webkit-backface-visibility: hidden; backface-visibility: hidden; min-height: 101px;}
+.header-wrapper.expanded.sticky { min-height: 104px}
 header { width: 100%; box-shadow: 0px 5px 10px #222222; background-color: #0C0E10; border-top: 1px solid #111111;; border-bottom: 1px solid #333333; .Transition-3s;
     &.sticky { position: fixed; left: auto; top: 0; z-index: 200; min-height: 71px !important;
         hgroup { padding-top: 9px;
@@ -210,16 +190,16 @@ hgroup { padding-left: 15px;
 	hgroup { float: left}
     ul.nav { display: block; margin: 0; padding: 0;
         li a { font-family: "Orbitron"; font-size: .9rem; letter-spacing: .5px; color: @white; text-transform: capitalize;}
-        li.active a { color: @grey;}
+        > li.active > a, .dropdown-menu li.active a { color: #666666;}
     }
 }
-#nav-top { width: 100%; height: 32px; border-bottom: 1px solid #030303;
-	background: -webkit-linear-gradient(#434951, #5b5f63 42%, #747474 84%) no-repeat;
-	background: -moz-linear-gradient(#434951, #5b5f63 42%, #747474 84%) no-repeat;
-	background: -ms-linear-gradient(#434951, #5b5f63 42%, #747474 84%) no-repeat;
-	background: -o-linear-gradient(#434951, #5b5f63 42%, #747474 84%) no-repeat;
-    background: linear-gradient(#434951, #5b5f63 42%, #747474 84%) no-repeat;
-	background-color: #5b5f63;
+#breadCrumb { width: 100%; height: 32px; border-top: 1px solid #333333;
+	background: -webkit-linear-gradient(#777777, #DDDDDD 45%, #BBBBBB 90%) no-repeat;
+	background: -moz-linear-gradient(#777777, #DDDDDD 45%, #BBBBBB 90%) no-repeat;
+	background: -ms-linear-gradient(#777777, #DDDDDD 45%, #BBBBBB 90%) no-repeat;
+	background: -o-linear-gradient(#777777, #DDDDDD 45%, #BBBBBB 90%) no-repeat;
+    background: linear-gradient(#777777, #DDDDDD 45%, #BBBBBB 90%) no-repeat;
+	background-color: #DDDDDD;
 }
 #navSocial { padding-top: 1px;
     ul { display: block; padding: 0; margin: 0;
@@ -485,11 +465,12 @@ footer { width: 100%; float: left; padding: 17px 0 15px; clear: both; border-top
 	
 /* CONTENT */
 
+h1 { margin: 10px 0 20px;}
 .spotlight-topics {
 	.col-xs-12 { margin: 7px 0}
 }
 .hovereffect {
-	h2 { -webkit-transform: translatey(0) !important; -mos-transform: translatey(0) !important;  -ms-transform: translatey(0) !important; -o-transform: translatey(0) !important; transform: translatey(0) !important;}
+	h2, a.info { -webkit-transform: translatey(25px) !important; -mos-transform: translatey(25px) !important;  -ms-transform: translatey(25px) !important; -o-transform: translatey(25px) !important; transform: translatey(25px) !important;}
 	.overlay, a.info { opacity: 1; filter: alpha(opacity=100);}
 }
 
@@ -608,12 +589,6 @@ hgroup { padding-top: 9px;
 #nav-main { min-height: 69px;
     ul.nav { padding-top: 11px;
     li a { padding-top: 14px;}
-    li.active { 
-	        background: -webkit-linear-gradient(#777777 2%, #0C0E10 3%, #0C0E10 97%, #777777 98%) no-repeat;
-	        background: -moz-linear-gradient(#777777 2%, #0C0E10 3%, #0C0E10 97%, #777777 98%) no-repeat;
-	        background: -ms-linear-gradient(#777777 2%, #0C0E10 3%, #0C0E10 97%, #777777 98%) no-repeat;
-	        background: -o-linear-gradient(#777777 2%, #0C0E10 3%, #0C0E10 97%, #777777 98%) no-repeat;
-			background: linear-gradient(#777777 2%, #0C0E10 3%, #0C0E10 97%, #777777 98%) no-repeat;}
 	}
 }
 }
@@ -623,6 +598,7 @@ hgroup { padding-top: 9px;
 @media all and (min-width: 937px) {
 
 .visible-link { display: none !important;}
+.header-wrapper.expanded { min-height: 134px}
 hgroup { padding-top: 17px}
 #nav-main {
     ul.nav { float: right; width: auto;
@@ -661,5 +637,18 @@ header.sticky {
 		}
 	}
 	#navMain.navbar-collapse.collapse { height: 70px !important;}
+}
+}
+
+@media all and (min-width: 1200px) {
+
+.hovereffect {
+	&:hover {  
+		h2, a.info {
+		-ms-transform: translatey(55px);
+		-webkit-transform: translatey(55px);
+		transform: translatey(55px);
+		}
+	}	
 }
 }

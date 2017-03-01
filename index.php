@@ -52,8 +52,8 @@ $(document).ready(function() {
 </header><!-- header -->
 </div>
 <section id="content" class="row centered">
-<!-- Quick Links Panel (begin) -->
 <div id="leftPanel" class="col-xs-12 col-sm-4 col-md-4 col-lg-3">
+<!-- Quick Links Panel (begin) -->
 	<div id="navSide">
 		<h4>Quick Links</h4>
       	<ul>
@@ -87,7 +87,6 @@ $(document).ready(function() {
     </div>
 <!-- NEO Stats Panel (end) -->
 </div>
-<!-- Quick Links Panel (end) -->
 <div id="mainPanel" class="col-xs-12 col-sm-8 col-md-8 col-lg-9 no-padding">
 <!-- Tools Panel (begin) -->
 	<div class="spotlight-topics">
@@ -134,9 +133,9 @@ $(document).ready(function() {
 	<script src="js/top_news.js"></script>
 		<h4>Top News Stories</h4>
 		<div id="top_news">
-			<!--<div class="row top-news top-news-archive">See the <a href="/news/">News Archive</a> for additional stories.</div>-->
 		</div>
 	</div>
+<!-- Top News Panel (end) -->
 </div>
 </section>
 <div class="push"></div>

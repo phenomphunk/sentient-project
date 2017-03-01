@@ -17,15 +17,15 @@
 			<ul class="nav navbar-nav">
 				<li class="visible-link dropdown <?php echo ($page1 == "About" ? "active" : "")?>"><a href="/sentient/about/" class="dropdown-toggle" data-toggle="dropdown">About<b class="caret"></b></a>
               		<ul class="dropdown-menu">
-              			<li class="<?php echo ($page2 == "NEO Studies" ? "active" : "")?>"><a href="/sentient/about/neos-studies.php">NEO Studies</a></li>
-                		<li class="<?php echo ($page2 == "NEO Basics" ? "active" : "")?>"><a href="/sentient/about/neos-basics.php">NEO Basics</a></li>
+              			<li class="<?php echo ($page2 == "NEO Studies" ? "active" : "")?>"><a href="/sentient/about/neo-studies.php">NEO Studies</a></li>
+                		<li class="<?php echo ($page2 == "NEO Basics" ? "active" : "")?>"><a href="/sentient/about/neo-basics.php">NEO Basics</a></li>
 						<li class="<?php echo ($page2 == "Search Program" ? "active" : "")?>"><a href="/sentient/about/search-program.php">Search Program</a></li>
               		</ul>
               	</li>
               	<li class="hidden-link dropdown <?php echo ($page1 == "About" ? "active" : "")?>"><a href="/sentient/about/" class="dropdown-toggle">About<b class="caret"></b></a>
               		<ul class="dropdown-menu">
-              			<li class="<?php echo ($page2 == "NEO Studies" ? "active" : "")?>"><a href="/sentient/about/neos-studies.php">NEO Studies</a></li>
-                		<li class="<?php echo ($page2 == "NEO Basics" ? "active" : "")?>"><a href="/sentient/about/neos-basics.php">NEO Basics</a></li>
+              			<li class="<?php echo ($page2 == "NEO Studies" ? "active" : "")?>"><a href="/sentient/about/neo-studies.php">NEO Studies</a></li>
+                		<li class="<?php echo ($page2 == "NEO Basics" ? "active" : "")?>"><a href="/sentient/about/neo-basics.php">NEO Basics</a></li>
 						<li class="<?php echo ($page2 == "Search Program" ? "active" : "")?>"><a href="/sentient/about/search-program.php">Search Program</a></li>
               		</ul>
               	</li>
