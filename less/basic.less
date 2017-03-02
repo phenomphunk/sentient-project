@@ -1,6 +1,6 @@
 /* VARIABLES */
 @white: #FFFFFF;
-@primary-color: #61AEE4;
+@primary-color: #315774;
 @blue: #93D2FA;
 @secondary-color: #BBBBBB;
 @grey: #999999;
@@ -101,7 +101,7 @@ footer p { margin: 0; font-size: .85rem; line-height: 1rem; letter-spacing: .5px
 
 #content a:link, #content a:visited { color: @primary-color; text-decoration: none; border-bottom: 1px dotted @primary-color}
 #content a:hover, footer a:hover, { -webkit-transition: .7s; -moz-transition-duration: .7s; -ms-transition-duration: .7s; -o-transition-duration: .7s; transition-duration: .7s; cursor: pointer; text-decoration: none}
-#nav-main a:hover, hgroup a:hover h1, footer a:hover { color: @primary-color !important; text-decoration: none !important}
+#nav-main a:hover, hgroup a:hover h1, footer a:hover { color: @white; text-decoration: none !important; border-bottom: none}
 #navSide li a:hover, footer a:link { color: @white !important}
 #content a:hover { color: #173e59; border-bottom: none}
 a[href^="http"]:not(.hide-ext-link):after {
@@ -211,14 +211,14 @@ hgroup { padding-left: 15px;
 }
 #navSide {
     ul { display: block; padding: 0; margin: 0; list-style: none; width: 150px;
-		li:first-child a { border-top: 1px solid @primary-color} 
-		li a { font-size: 1rem; display: inline-block; width: 100%; vertical-align: middle; border-bottom: 1px solid @primary-color !important; padding: 3px 8px; position: relative; .Transition-3s;
+		li:first-child a { border-top: 1px solid #18405c} 
+		li a { font-size: 1rem; display: inline-block; width: 100%; vertical-align: middle; border-bottom: 1px solid #18405c !important; padding: 3px 8px; position: relative; .Transition-3s;
     	-webkit-transform: perspective(1px) translateZ(0);
     	-moz-transform: perspective(1px) translateZ(0);
     	-ms-transform: perspective(1px) translateZ(0);
     	-o-transform: perspective(1px) translateZ(0);
     	transform: perspective(1px) translateZ(0);
-			&:before { content: ""; position: absolute; z-index: -1; top: 0; left: 0; right: 0; bottom: 0; background: @primary-color; 
+			&:before { content: ""; position: absolute; z-index: -1; top: 0; left: 0; right: 0; bottom: 0; background: #18405c; 
 			-webkit-transform: scaleX(0); 
 			-moz-transform: scaleX(0);
 			-ms-transform: scaleX(0); 
@@ -248,7 +248,7 @@ hgroup { padding-left: 15px;
 /* CONTENT */
 
 #content { padding-top: 20px;
-	figure { margin: 0 0 15px 0}
+	figcaption { margin: 0 0 15px 0}
 	.spotlight-topics { margin: 15px 0; float: left}
 }
 #mainPanel {
