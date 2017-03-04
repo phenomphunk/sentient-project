@@ -33,7 +33,7 @@ $(document).ready(function() {
 });
 $(document).ready(function() {
     $.fancybox({
-        href: "http://www.petehanna.com/sentient/birthday-form.html",
+        href: "http://www.petehanna.com/sentient/birthday-form.php",
         type: "iframe",
 		width: 500,
     });
