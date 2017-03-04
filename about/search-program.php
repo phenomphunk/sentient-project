@@ -58,7 +58,7 @@ $(document).ready(function() {
 <div id="mainPanel" class="pull-right col-xs-12 col-sm-9 col-md-9 col-lg-10">
 <!-- Main Content (begin) -->
 	<h1>NEO Search Program</h1>
-	<figure class="right col-xs-12 col-md-4 col-lg-5">
+	<figure class="right col-xs-12 col-sm-5 col-md-4">
 		<img src="http://cneos.jpl.nasa.gov/images/SchmidtB1.jpg" alt="Pan-STARRS1 Telescope, IFA Univeristy of Hawaii" class="img-responsive">
 		<figcaption class="image-caption">
 			Catalina Sky Survey, University of Arizona
@@ -66,7 +66,7 @@ $(document).ready(function() {
 	</figure>
 	<p>There are a number of NASA supported Near-Earth Object (NEO) discovery teams currently in operation. The early efforts to discover NEOs relied upon the comparison of photographic films of the same region of the sky taken several minutes apart. The vast majority of the objects recorded upon these films were stars and galaxies and their images were located in the same relative position on these films. Early discovery techniques included blink comparators and stereomicroscopes to examine the photographic images. Because a moving NEO would be in a slightly different position on each photograph and the background starts and galaxies were not, the NEOs appeared to jump back and forth when each image, in turn, was quickly viewed through a so-called blink comparator. Alternately, the NEO’s image appeared to “rise” above the background stars when two different and slightly offset images were viewed with a special stereo viewing microscope.</p>
 	<p>All of the NEO discovery teams currently use so-called charged couple devices (CCDs) rather than photographic images. These CCD cameras are similar in design to those used in cell phones and they record images digitally in many electronic picture elements (pixels). The length and width of a CCD detector is usually given in terms of pixel elements. A fairly common astronomical CCD detector might have dimensions of about 2000 x 2000 pixels. While the CCD technology allows today’s detectors to be more sensitive and accurate that the older photographic images, the modern discovery technique itself is rather similar. Separated by several minutes, three or more CCD images are taken of the same region of the sky. These images are then compared to see if any NEOs have systematically moved to different positions from one image to the next. For a newly discovered NEO, the separation of the object’s location from one image to the next, the direction it appears to be traveling and its brightness are helpful in identifying how close the object was to the Earth, its size and general orbital characteristics. For example, an object that appears to be moving very rapidly from one image to the next is almost certainly very close to the Earth. Sophisticated computer-aided analyses of the CCD images have replaced the older, manual detection techniques but often times, a new NEO discovery is still verified using the human eye.</p>
-	<figure class="left col-xs-12 col-md-4 col-lg-5">
+	<figure class="left col-xs-12 col-sm-5 col-md-4">
 		<img src="http://cneos.jpl.nasa.gov/images/PS1_dome.jpg" alt="Pan-STARRS1 Telescope, IFA Univeristy of Hawaii" class="img-responsive">
 		<figcaption class="image-caption">
 			Pan-STARRS1 Telescope, IFA Univeristy of Hawaii
